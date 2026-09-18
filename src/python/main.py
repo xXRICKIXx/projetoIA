@@ -73,7 +73,7 @@ def atualizar_relatorio(asset_id):
     document.getElementById("pdf-extraction-contai").innerHTML = pdf_html
 
 def renderizar_cards(ativo_ativo=1):
-    container = document.getElementById("cards-contain")
+    container = document.getElementById("cards-container")
     container.innerHTML = ""
     
     for asset in operational_assets:
