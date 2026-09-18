@@ -32,7 +32,7 @@ def atualizar_relatorio(asset_id):
         
     asset = next((a for a in operational_assets if a["id"] == asset_id), operational_assets[0])
     
-    res = validar_tempo_encomenda(asset["tempo_sugerido_ia"])
+    res = validar_tempo_encomenda(asset["tempo_sugerido_ia"], asset["tempo_disponivel_min"])
     
     cor_status = "#10b981" if "ACEITO" in res["status_producao"] else "#f87171"
     
