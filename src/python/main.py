@@ -9,9 +9,10 @@ async def carregar_dados():
     global operational_assets
     response = await pyfetch(".././dados.json")
     operational_assets = await response.json()
-    
-    renderiza_cards(1)
+
+    renderizar_cards(1)
     atualizar_relatorio(1)
+
 
 def validar_tempo_encomenda(tempo_sugerido_ia: float, tempo_disponivel_min: float, fator_folga_minimo: float = 1.2) -> dict:
     """Aplica o guardrail no tempo estimado pela IA para encomendas da cantina."""
