@@ -70,7 +70,7 @@ def atualizar_relatorio(asset_id):
     document.getElementById("guardrail-metrics").innerHTML = guardrail_html
     document.getElementById("telemetry-stats-container").innerHTML = telemetry_html
     document.getElementById("embeddings-container").innerHTML = embeddings_html
-    document.getElementById("pdf-extraction-contai").innerHTML = pdf_html
+    document.getElementById("pdf-extraction-container").innerHTML = pdf_html
 
 def renderizar_cards(ativo_ativo=1):
     container = document.getElementById("cards-container")
