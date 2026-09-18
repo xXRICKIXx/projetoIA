@@ -108,6 +108,6 @@ def renderizar_cards(ativo_ativo=1):
         
         btn = document.getElementById(f"btn-{aid}")
         if btn:
-            btn.onclik = make_handler(aid)
+            btn.onclick = make_handler(aid)
 
 carregar_dados()
