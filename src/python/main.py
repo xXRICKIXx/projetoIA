@@ -58,7 +58,7 @@ def atualizar_relatorio(asset_id):
         <span style="font-size: 0.8rem; color: var(--text-muted)">Vetor Numpy processado (dim=5):</span>
         <div class="embeddings-preview">{asset['embeddings']}</div>
         <!-- ERRO 7 (Python): Chamada de método incorreta do numpy ("linalg.normw" não existe, gera AttributeError) -->
-        <div class="metric-item"><span>Norma Euclidiana L2:</span> <span class="metric-value">{round(float(np.linalg.normw(vetor_np)), 4)}</span></div>
+        <div class="metric-item"><span>Norma Euclidiana L2:</span> <span class="metric-value">{round(float(np.linalg.norm(vetor_np)), 4)}</span></div>
     """
     
     pdf_html = f"""
