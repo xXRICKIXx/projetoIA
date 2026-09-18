@@ -26,7 +26,7 @@ def validar_tempo_encomenda(tempo_sugerido_ia: float, tempo_disponivel_min: floa
     }
 
 def atualizar_relatorio(asset_id):
-    if not operational_asset:
+    if not operational_assets:
         return
         
     asset = next((a for a in operational_assets if a["id"] == asset_id), operational_assets[0])
